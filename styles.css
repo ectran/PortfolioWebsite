@@ -3,14 +3,14 @@
             font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #E9ECEF;
-            color: #212529;
+            background-color: #efe5d5;
+            color: #252627;
         }
 
         /* Navigation */
         header {
-            background-color: #495057;
-            color: #F8F9FA;
+            background-color: #994d47;
+            color: #efe5d5;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -42,7 +42,7 @@
         }
 
         nav ul li a {
-            color: #F8F9FA;
+            color: #efe5d5;
             text-decoration: none;
             font-weight: bold;
         }
@@ -61,11 +61,13 @@
 
         #about {
             padding-top: 100px;
+            padding-left: 300px;
+            padding-right: 300px;
         }
 
         /* Project */
         .project-category {
-            background: #F8F9FA;
+            background: #bfb9a3;
             padding: 15px;
             margin: 20px 0;
             border-radius: 8px;
@@ -96,11 +98,11 @@
             height: auto;
         }
 
-        .rayne-image img,
+        .sprites-image img,
         .sesame-image img,
         .Prototype-image img,
         .Portrait-image img {
-            max-width: 400px;
+            max-width: 200px;
         }
 
         .Still-image {
@@ -113,6 +115,25 @@
         .Still-image img {
             max-width: 600px;
         }
+
+        .sprites-image {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .rayne-image .top-row {
+        display: flex;
+        gap: 10px; 
+        justify-content: center;
+        }
+
+        .rayne-image .bottom-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        align-items: center;
+    }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -131,12 +152,12 @@
                 margin-left: 0; 
             }
         
-            .rayne-image img,
+            .sprites-image img,
             .sesame-image img,
             .Prototype-image img,
             .Portrait-image img,
             .Still-image img {
-                max-width: 90%;
+                max-width: 50%;
             }
         }
 
@@ -144,7 +165,8 @@
         footer {
             text-align: center;
             padding: 10px;
-            background: #495057;
-            color: #F8F9FA;
+            background: #994d47;
+            color: #efe5d5;
             font-size: 15px;
         }
+
