@@ -61,8 +61,11 @@
 
         #about {
             padding-top: 100px;
-            padding-left: 300px;
-            padding-right: 300px;
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1500px;
+            margin: auto;
+            text-align: center;
         }
 
         /* Project */
