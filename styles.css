@@ -159,7 +159,11 @@
                 margin-left: 0; 
             }
         
-            .sprites-image img,
+            .sprites-image img {
+                max-width: 50%
+            }
+
+
             .sesame-image img,
             .Prototype-image img,
             .Portrait-image img,
@@ -173,6 +177,13 @@
                 max-width: 100%;
             }
             
+            .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
         }
 
         /* Footer */
