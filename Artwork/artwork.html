@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Tran - Portfolio/Artwork</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="stylesheet" href="../Home/home.css">
+    <link rel="stylesheet" href="../Projects/projects.css">
+    <link rel="stylesheet" href="artwork.css">
+</head>
+
+<body>
+    <div class="page-container">
+
+        <!-- Sticky Header -->
+        <header class="projects-header">
+            <div class="header-top">
+                <div class="header-left">
+                    <h2>EMILY TRAN</h2>
+                </div>
+
+                <div class="header-right">
+                    <img src="../Home/assets/veeProfile.png" alt="Emily Tran Profile" />
+                    <button class="hamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav class="header-center">
+                    <a href="../Home/home.html">HOME</a>
+                    <a href="../Projects/projects.html">PROJECTS</a>
+                    <a href="artwork.html">ARTWORK</a>
+                    <a href="../Contact/contact.html">CONTACT</a>
+                </nav>
+            </div>
+
+        </header>
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+            <h1>ARTWORK</h1>
+        </section>
+
+        <!-- Artwork Description -->
+        <section id="artwork-description">
+            <div class="artwork-description-content">
+                <p>Most of my art centers on OCs and portraits—I love creating characters with pretty faces! 
+                    Constantly experimenting and learning, so expect variety in style!
+                </p>
+            </div>
+        </section>
+
+        <!-- Pixel Art -->
+        <section class="art-category">
+            <h2>PIXEL ART</h2>
+            <div class="art-grid">
+                <div class="art-card">
+                    <img src="assets/vee.gif" alt="Pixel Art 1">
+                    <p>Meet Vee (again)! This time, in a stripped-down version for animation, almost like her alter self.</p>
+                </div>
+                <div class="art-card">
+                    <img src="assets/digi.gif" alt="Pixel Art 2">
+                    <p>Meet Digi, an OC belonging to a friend that I got to draw in my style!</p>
+                </div>
+                <div class="art-card">
+                    <img src="assets/sesame.gif" alt="Pixel Art 2">
+                    <p>Meet Sesame, a cat sprite I designed and animated for a former game project! See inside to see more of him.</p>
+                    <a href="sesame/sesame.html" class="read-more">[ View More ]</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Original Character Portraits -->
+        <section class="art-category">
+            <h2>ORIGINAL CHARACTER PORTRAITS</h2>
+            <div class="art-grid">
+                <div class="art-card">
+                    <img src="assets/portrait1.png" alt="OC Portrait 1">
+                </div>
+                <div class="art-card">
+                    <img src="assets/portrait2.png" alt="OC Portrait 2">
+                </div>
+                <div class="art-card">
+                    <img src="assets/portrait3.png" alt="OC Portrait 3">
+                </div>
+                <div class="art-card">
+                    <img src="assets/portrait4.png" alt="OC Portrait 4">
+                </div>
+                <div class="art-card">
+                    <img src="assets/portrait5.png" alt="OC Portrait 5">
+                </div>
+                <div class="art-card">
+                    <img src="assets/portrait6.png" alt="OC Portrait 6">
+                </div>
+            </div>
+        </section>
+
+        <!-- Traditional Work -->
+        <section class="art-category">
+            <h2>TRADITIONAL WORK</h2>
+            <div class="art-grid">
+                <div class="art-card">
+                    <img src="assets/trad1.jpg" alt="Traditional Work 1">
+                    <p>A traditional acrylic painting created from real-life objects, focusing on light, shadow, and texture.</p>
+                </div>
+                <div class="art-card">
+                    <img src="assets/trad2.jpg" alt="Traditional Work 2">
+                    <p>A traditional landscape painting of "The Crystarium" from the video game FINAL FANTASY XIV, created with acrylic paint.</p>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+    </div>
+
+    <footer>
+        © 2025 Emily Tran
+    </footer>
+
+    <!-- Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.projects-header .header-center');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+    
+</body>
+</html>

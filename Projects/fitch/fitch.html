@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Tran - Portfolio/Projects/Fitch</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="stylesheet" href="../../Home/home.css">
+    <link rel="stylesheet" href="../projects.css"> 
+    <link rel="stylesheet" href="../booping_beep/boopingBeep.css">
+    <link rel="stylesheet" href="fitch.css">
+</head>
+
+<body>
+    <div class="page-container">
+
+        <!-- Sticky Header -->
+        <header class="projects-header">
+            <div class="header-top">
+                <div class="header-left">
+                    <h2>EMILY TRAN</h2>
+                </div>
+
+                <div class="header-right">
+                    <img src="../../Home/assets/veeProfile.png" alt="Emily Tran Profile" />
+                    <button class="hamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav class="header-center">
+                    <a href="../../Home/home.html">HOME</a>
+                    <a href="../projects.html">PROJECTS</a>
+                    <a href="../../Artwork/artwork.html">ARTWORK</a>
+                    <a href="../../Contact/contact.html">CONTACT</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+            <h1>FITCH</h1>
+        </section>
+
+        <img src="../assets/fitch.png" class="project-logo">
+
+        <!-- Game Description + Credits -->
+        <section class="project-details">
+
+            <div class="project-description">
+                <p>The Adventure of Mammy is a 2D narrative adventure game being developed independently. Players navigate through an action-filled enviroment that represents the hardships of long-distannce relationships through narrative and environmental storytelling. </p>
+                <a href="https://github.com/ectran/TheAdventureOfMammy" class="read-more" target="_blank" rel="noopener noreferrer">[ View my code here! ]</a>
+            </div>
+
+            <div class="project-credits">
+                <h2>CURRENT TEAM</h2>
+                <ul>
+                    <li>Code, Art & Design – Emily Tran</li>
+                    <li>Music – Eve Chhom</li>
+                </ul>
+            </div>
+
+            <p>While still in development, the sprites and videos below showcases mini-prototypes to experiment with player movement and asethetic. </p>
+            <video controls width="100%" style="max-width: 800px; margin-bottom: 20px; display: block;">
+                <source src="assets/fitchPrototype1.mp4" type="video/mp4">
+            </video>
+            <video controls width="100%" style="max-width: 800px; margin-bottom: 20px; display: block;">
+                <source src="assets/fitchPrototype2.mov" type="video/mp4">
+            </video>
+            <img src="assets/fitchMC.gif" alt="Screenshot 1">
+        </section>
+
+        <!-- Software -->
+        <section class="software">
+            <h2>Software</h2>
+                <p>Unity, Aseprite, FL Studio</p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2025 Emily Tran
+    </footer>
+
+    <!-- Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.projects-header .header-center');
+
+        hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        hamburger.classList.toggle('open');
+        });
+    </script>
+    
+</body>
+</html>

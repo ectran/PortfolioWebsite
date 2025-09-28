@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Tran - Portfolio/Contact</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="stylesheet" href="../Home/home.css">
+    <link rel="stylesheet" href="../Projects/projects.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="page-container">
+
+        <!-- Sticky Header -->
+        <header class="projects-header">
+            <div class="header-top">
+                <div class="header-left">
+                    <h2>EMILY TRAN</h2>
+                </div>
+
+                <div class="header-right">
+                    <img src="../Home/assets/veeProfile.png" alt="Emily Tran Profile" />
+                    <button class="hamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav class="header-center">
+                    <a href="../Home/home.html">HOME</a>
+                    <a href="../Projects/projects.html">PROJECTS</a>
+                    <a href="../Artwork/artwork.html">ARTWORK</a>
+                    <a href="contact.html">CONTACT</a>
+                </nav>
+            </div>
+
+        </header>
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+            <h1>CONTACT</h1>
+
+        <!-- Contact Info -->
+        <section id="contact-info">
+            <p id="contact-message">Feel free to reach out!</p>
+            <p id="contact-email"> Email: <a href="mailto:emilyclaratran@yahoo.com">emilyclaratran@yahoo.com</a></p>
+            <p id="contact-phone">Phone: (805) 248-9211</p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2025 Emily Tran
+    </footer>
+
+    <!-- Hamburger Menu JS -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.projects-header .header-center');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

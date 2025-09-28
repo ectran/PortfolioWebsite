@@ -1,0 +1,214 @@
+/* Sticky Header */
+.projects-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column; 
+    background-color: #e8d8c4;
+    z-index: 10;
+    padding: 15px 20px;
+}
+
+/* Top Row */
+.projects-header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Name */
+.projects-header .header-left h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #614b4b;
+}
+
+/* Nav */
+.projects-header .header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.projects-header .header-center a {
+    text-decoration: none;
+    color: #e8d8c4;
+    background-color: #561c24;
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.projects-header .header-center a:hover {
+    background-color: #6d2932;
+    transform: scale(1.05);
+}
+
+/* Highlight current page (PROJECTS) */
+.projects-header .header-center a[href="projects.html"] {
+    background-color: #80634f;
+}
+
+.projects-header .header-center a[href="projects.html"]:hover {
+    background-color: #a07c60;
+}
+
+/* Right (Profile Picture) */
+.projects-header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects-header .header-right img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: #614b4b;
+    border-radius: 2px;
+    transition: none;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Projects Hero */
+.projects-hero {
+    text-align: center;
+    margin: 40px;
+}
+
+.projects-hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #614b4b; 
+    margin: 0;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #e8d8c4;
+    padding: 15px;
+    text-align: left;
+}
+
+.project-card h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #614b4b;
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+    margin-bottom: 10px;
+}
+
+.project-card .read-more {
+    margin: 0 10px;
+    color: #614b4b;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.project-card .read-more:hover {
+    text-decoration: underline;
+}
+
+.project-card .project-link {
+    text-decoration: none; 
+    color: inherit;  
+    display: block;  
+}
+.project-card .project-link h3 {
+    margin: 0 0 10px 0;
+}
+.project-card .project-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mobile Hamburger */
+@media (max-width: 1381px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .projects-header .header-center {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 300px;
+        background-color: #e8d8c4;
+        padding: 10px 15px;     
+    }
+
+    .projects-header .header-center.active {
+        display: flex;
+    }
+
+    .projects-header .header-center a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+}

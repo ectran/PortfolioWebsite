@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Tran - Portfolio/Projects</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="stylesheet" href="../Home/home.css">
+    <link rel="stylesheet" href="projects.css"> 
+</head>
+
+<body>
+    <div class="page-container">
+
+        <!-- Sticky Header -->
+        <header class="projects-header">
+            <div class="header-top">
+                <div class="header-left">
+                    <h2>EMILY TRAN</h2>
+                </div>
+
+                <div class="header-right">
+                    <img src="../Home/assets/veeProfile.png" alt="Emily Tran Profile" />
+                    <button class="hamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav class="header-center">
+                    <a href="../Home/home.html">HOME</a>
+                    <a href="projects.html">PROJECTS</a>
+                    <a href="../Artwork/artwork.html">ARTWORK</a>
+                    <a href="../Contact/contact.html">CONTACT</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+            <h1>PROJECTS</h1>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <a href="booping_beep/boopingBeep.html" class="project-link">
+                    <h3>BOOPING BEEP</h3>
+                    <img src="assets/boopingBeep.png" alt="Project 1 Screenshot" />
+                </a>
+                <p>Booping Beep is a 2D endless runner game created for a 2025 Spring Game Jam hosted by SPIN_GameJam, GDC Northridge and VGDA. See inside to explore gameplay, art, and more!</p>
+                <a href="booping_beep/boopingBeep.html" class="read-more">[ View Project Details ]</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <a href="sntruggled/sntruggled.html" class="project-link">
+                    <h3>SNTRUGGLED</h3>
+                    <img src="assets/sntruggled.png" alt="Project 1 Screenshot" />
+                </a>
+                <p>Sntruggled (a play on the words snuggled and struggled) is a VR FPS zombie survival game created for Cal Poly Pomona’s research VR Lab. See inside to view gameplay and more!</p>
+                <a href="sntruggled/sntruggled.html" class="read-more">[ View Project Details ]</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <a href="the_adventure_of_mammy/theAdventureOfMammy.html" class="project-link">
+                    <h3>THE ADVENTURE OF MAMMY [WIP]</h3>
+                    <img src="assets/theAdventureOfMammy.png" alt="Project 1 Screenshot" />
+                </a>
+                <p>The Adventure of Mammy is a 2D narrative adventure game being developed independently. See inside to view gameplay, code, art and more!</p>
+                <a href="the_adventure_of_mammy/theAdventureOfMammy.html" class="read-more">[ View Project Details ]</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <a href="fitch/fitch.html" class="project-link">
+                    <h3><br>FITCH [WIP]</h3>
+                    <img src="assets/fitch.png" alt="Project 1 Screenshot" />
+                </a>
+                <p>Fitch is a 2D Metroidvania game being developed independently. See inside to view art and more!</p>
+                <a href="fitch/fitch.html" class="read-more">[ View Project Details ]</a>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        © 2025 Emily Tran
+    </footer>
+
+    <!-- Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.projects-header .header-center');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+    
+</body>
+</html>

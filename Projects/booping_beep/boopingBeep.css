@@ -1,0 +1,159 @@
+/* Project Hero */
+.project-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.project-hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-container p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+    margin-bottom: 10px;
+}
+
+/* Project Details */
+.project-logo {
+    display: block;
+    margin: 0 auto 2rem auto; 
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.page-container img {
+    width: 100%;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.project-details {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project-details .read-more {
+    margin: 0 10px;
+    color: #614b4b;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.project-details .read-more:hover {
+    text-decoration: underline;
+}
+
+.project-description {
+    flex: 2 1 50%; 
+    min-width: 280px;
+    margin-right: 100px;
+    margin-top: 30px;
+  
+}
+
+.project-credits {
+    min-width: 220px;
+    max-width: 300px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+    margin-bottom: 10px;
+}
+
+.project-credits h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #614b4b;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.project-description a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.project-credits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-credits li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contributions */
+.contributions {
+    margin: 3rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+    margin-bottom: 10px;
+}
+
+.contributions h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #614b4b;
+    margin-bottom: 20px;
+}
+
+/* Screenshots */
+.screenshots {
+    margin: 3rem 0;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.screenshots-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Software */
+.software {
+    margin: 3rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+    margin-bottom: 10px;
+}
+
+.software h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #614b4b;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .project-description {
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .project-details {
+    flex-direction: column;
+  }
+
+  .project-credits {
+    max-width: 100%; 
+  }
+}

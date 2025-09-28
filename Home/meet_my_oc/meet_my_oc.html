@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emily Tran - Vee</title>
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+  <link rel="stylesheet" href="../home.css">
+  <link rel="stylesheet" href="../../Projects/projects.css"> 
+  <link rel="stylesheet" href="meet_my_oc.css">
+</head>
+
+<body>
+  <div class="page-container">
+
+    <!-- Sticky Header -->
+    <header class="projects-header">
+      <div class="header-top">
+        <div class="header-left">
+          <h2>EMILY TRAN</h2>
+        </div>
+
+        <div class="header-right">
+          <img src="../assets/veeProfile.png" alt="Emily Tran Profile" />
+          <button class="hamburger" aria-label="Toggle Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <nav class="header-center">
+          <a href="../home.html">HOME</a>
+          <a href="../../Projects/projects.html">PROJECTS</a>
+          <a href="../../Artwork/artwork.html">ARTWORK</a>
+          <a href="../../Contact/contact.html">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="projects-hero">
+      <h1>VEE'S DEVELOPMENT</h1>
+    </section>
+
+    <!-- Intro -->
+    <section class="vee-intro">
+      <div class="vee-text">
+        <p>
+          Vee’s design actually started from my Minecraft skin, one which I also made. Her name
+          also came from my Minecraft username (XV1etnam). I was simply called “V,” which
+          later became “Vee” to avoid being misread as “Vi.” That name eventually grew into my
+          current username, “veiix,” so in a way, Vee became part of my own online identity.
+        </p>
+      </div>
+      <figure class="vee-image">
+        <img src="assets/veeMCSkin.png" alt="Minecraft skin that started it all">
+        <figcaption>The Minecraft skin that started it all.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Year 2020 -->
+    <section class="vee-year">
+      <h2>2020</h2>
+      <div class="vee-grid">
+        <figure>
+          <img src="assets/vee2020.png" alt="2020 drawing">
+          <figcaption>A drawing of my Minecraft skin.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Personality Note -->
+    <section class="vee-note">
+      <p>
+        As her design developed, I used her as a way to express elements of my own personality through visual motifs:
+        roses symbolizing innocence and softness, a hood for mystery and introversion, glasses reflecting intellect and
+        a quiet studious side, and a mix of suits with techwear to capture that strange balance between formal,
+        futuristic, and unconventional.
+      </p>
+    </section>
+
+    <!-- 2021 -->
+    <section class="vee-year">
+      <h2>2021</h2>
+      <div class="vee-grid">
+        <figure>
+          <img src="assets/vee2021.png" alt="2021 stylized version">
+          <figcaption>A more stylized, revamped version of her.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2022 -->
+    <section class="vee-year">
+      <h2>2022</h2>
+      <div class="vee-grid">
+        <figure>
+          <img src="assets/vee2022.png".png" alt="2022 cartoonish revision">
+          <figcaption>A cartoonish revision (greyscale has a soft spot in my heart).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2023 -->
+    <section class="vee-year">
+      <h2>2023</h2>
+      <div class="vee-grid">
+        <figure>
+          <img src="assets/vee2023v1.png" alt="2023 unfinished sketch">
+          <figcaption>An unfinished color sketch, testing saturation vs. reddish tones.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/vee2023v2.png" alt="2023 framed samoyed">
+          <figcaption>A small framed drawing for backgrounds, featuring a tiny samoyed (my favorite dog breed!).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2024 -->
+    <section class="vee-year">
+      <h2>2024</h2>
+      <div class="vee-grid">
+        <figure>
+          <img src="assets/vee2024.png" alt="2024 full-body outfit">
+          <figcaption>Her first developed full-body outfit.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2025 -->
+    <section class="vee-year">
+      <h2>2025</h2>
+      <div class="vee-grid">
+        <figure>
+          <img src="assets/vee2025v1.png" alt="2025 revised outfit">
+          <figcaption>A revised outfit, mostly finalized! Just need to finish fleshing out the lower half and rendering it all.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/vee2025v2.png" alt="2025 chibi version">
+          <figcaption>A stylized chibi version.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/veeProfileFull.png" alt="2025 pixel version">
+          <figcaption>A stylized pixel art version.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Final Notes -->
+    <section class="vee-final">
+      <p>
+        She’s taken me years to work on because of how special she is to me—I’ve continued refining her design to get as close
+        to “perfect” as possible for my main and most personal OC.
+      </p>
+      <p>
+        Looking back at her growth feels like looking back at my own—she’s not just an OC, but also a digital persona that’s
+        evolved alongside me.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>© 2025 Emily Tran</footer>
+
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.projects-header .header-center');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

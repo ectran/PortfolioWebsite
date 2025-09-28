@@ -1,0 +1,68 @@
+/* Intro */
+.vee-intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 2rem 20px;
+}
+.vee-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+}
+.vee-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+.vee-image img {
+  max-width: 100%;
+}
+.vee-image figcaption {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+}
+
+/* Year Sections */
+.vee-year {
+  margin: 2rem 20px;
+}
+.vee-year h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #614b4b;
+    margin-bottom: 20px;
+}
+.vee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 1rem;
+}
+.vee-grid img {
+  width: 100%;
+}
+.vee-grid figcaption {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #2b1a1f;
+}
+
+/* Notes */
+.vee-note, .vee-final {
+  margin: 2rem 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #2b1a1f;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .vee-image figcaption {
+    margin-bottom: 0.5rem; 
+  }
+
+  .vee-year {
+    margin-top: 1rem; 
+  }
+}
+

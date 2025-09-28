@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Tran - Portfolio/Projects/BoopingBeep</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="stylesheet" href="../../Home/home.css">
+    <link rel="stylesheet" href="../projects.css"> 
+    <link rel="stylesheet" href="boopingBeep.css">
+</head>
+
+<body>
+    <div class="page-container">
+
+        <!-- Sticky Header -->
+        <header class="projects-header">
+            <div class="header-top">
+                <div class="header-left">
+                    <h2>EMILY TRAN</h2>
+                </div>
+
+                <div class="header-right">
+                    <img src="../../Home/assets/veeProfile.png" alt="Emily Tran Profile" />
+                    <button class="hamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <nav class="header-center">
+                    <a href="../../Home/home.html">HOME</a>
+                    <a href="../projects.html">PROJECTS</a>
+                    <a href="../../Artwork/artwork.html">ARTWORK</a>
+                    <a href="../../Contact/contact.html">CONTACT</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Projects Hero -->
+        <section class="projects-hero">
+            <h1>BOOPING BEEP</h1>
+        </section>
+        
+        <img src="../assets/boopingBeep.png" class="project-logo">
+
+        <!-- Game Description + Credits -->
+        <section class="project-details">
+
+            <div class="project-description">
+                <p>Booping Beep is a 2D endless runner created for a 2025 Spring Game Jam hosted by SPIN_GameJam / GDC Northridge / VGDA. Players control a bee named Beep—dodging through endless obstacles and collecting power-ups along the way. Booping Beep was developed by a team of four within a 75-hour time limit, all participating in their first game jam. Booping Beep is also heavily inspired by the mobile game, Jetpack Joyride.</p>
+                <a href="https://veiix.itch.io/booping-beep" class="read-more" target="_blank" rel="noopener noreferrer">[ Play on itch.io! ]</a>
+
+            </div>
+
+            <div class="project-credits">
+                <h2>Credits</h2>
+                <ul>
+                    <li>Art, Animation, Design & QA – Emily Tran</li>
+                    <li>Art & QA – Nathan Lam</li>
+                    <li>UI, Music & Title Screen – Angela Santos</li>
+                    <li>Code & Game Mechanics – William Licup</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- My Contributions -->
+        <section class="contributions">
+            <h2>My Contributions</h2>
+                <p>Below are the sprites and animations I designed and implemented for this project.</p>
+        </section>
+
+        <div class="screenshots-grid">
+            <img src="assets/beepSheet.png" alt="Screenshot 1">
+            <img src="assets/beepChonk.png" alt="Screenshot 2">
+            <img src="assets/beepHonk.gif" alt="Screenshot 3">
+            <img src="assets/beepSpeed.gif" alt="Screenshot 4">
+            <img src="assets/beepShield.gif" alt="Screenshot 5">
+            <img src="assets/beepBoth.gif" alt="Screenshot 6">
+        </div>
+        </section>
+
+        <!-- Software -->
+        <section class="software">
+            <h2>Software</h2>
+                <p>Unity, Aseprite & FL Studio</p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2025 Emily Tran
+    </footer>
+
+    <!-- Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.projects-header .header-center');
+
+        hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        hamburger.classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>
