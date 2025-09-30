@@ -76,12 +76,11 @@
     font-weight: 500;
     color: #614b4b;
     margin-bottom: 20px;
-    margin-top: 0;
+    margin-top: 30px;
 }
 
 .project-description a {
     display: inline-block;
-    margin-top: 1rem;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -98,7 +97,6 @@
 
 /* Contributions */
 .contributions {
-    margin: 3rem 0;
     font-size: 0.95rem;
     line-height: 1.4;
     color: #2b1a1f;
@@ -113,10 +111,6 @@
 }
 
 /* Screenshots */
-.screenshots {
-    margin: 3rem 0;
-}
-
 .screenshots-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -125,12 +119,11 @@
 .screenshots-grid img {
     width: 100%;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* Software */
 .software {
-    margin: 3rem 0;
     font-size: 0.95rem;
     line-height: 1.4;
     color: #2b1a1f;
@@ -144,17 +137,27 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .project-description {
     margin-right: 0;
     margin-top: 0;
+    order: 0;
+  }
+
+  .contributions {
+    order: 1;
   }
 
   .project-details {
     flex-direction: column;
   }
 
+  .screenshots-grid {
+    order: 2;
+  }
+
   .project-credits {
     max-width: 100%;
+    order: 3;
   }
 }
