@@ -50,10 +50,6 @@
     transition: color 0.2s;
 }
 
-.project-details .read-more:hover {
-    text-decoration: underline;
-}
-
 .project-description {
     flex: 2 1 50%; 
     min-width: 280px;
