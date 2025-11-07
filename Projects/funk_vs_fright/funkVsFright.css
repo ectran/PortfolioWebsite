@@ -171,4 +171,11 @@
         margin: 1rem auto;
         display: block;
     }
+
+    .project-description + .video-container,
+    .video-container {
+        order: 2; 
+        max-width: 95vw;
+        padding-bottom: calc(95vw * 9 / 16);
+    }
 }
