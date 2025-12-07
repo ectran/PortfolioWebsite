@@ -6,6 +6,11 @@
 .project-hero img {
     max-width: 100%;
     height: auto;
+    user-select: none;
+    -webkit-user-drag: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;
+    pointer-events: none; 
 }
 
 .page-container p {
@@ -30,6 +35,11 @@
     height: auto;
     user-select: none;
     -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;
+    pointer-events: none; 
 }
 
 .project-details {
@@ -91,6 +101,14 @@
     margin-bottom: 0.5rem;
 }
 
+.project-credits h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color:#3a2929;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
 /* Contributions */
 .contributions {
     font-size: 0.95rem;
@@ -123,6 +141,11 @@
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    user-select: none;
+    -webkit-user-drag: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;
+    pointer-events: none; 
 }
 
 /* Software */

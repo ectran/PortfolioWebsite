@@ -12,7 +12,7 @@
 }
 
 .project-credits {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 /* Mobile Portrait & Landscape */
@@ -22,9 +22,12 @@
     }
 
     .project-description { order: 0; }
-    .project-video { order: 1; }
-    .project-characters { order: 2; }
-    .project-credits { order: 3; }
+    .project-credits { order: 1; }
+
+    .dev-note { order: 2; }
+    .project-video { order: 3; }
+    .characters-note { order: 4; }
+    .project-characters { order: 5; }
 
     .project-details video {
         width: 80vw;

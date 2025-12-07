@@ -38,6 +38,7 @@ img {
     -webkit-user-drag: none; 
     -moz-user-select: none;  
     -ms-user-select: none;
+    pointer-events: none; 
 }
 
 /* Header Section */
@@ -161,6 +162,11 @@ img {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    user-select: none;
+    -webkit-user-drag: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;
+    pointer-events: none; 
 }
 
 /* OC Section */
@@ -192,6 +198,11 @@ img {
 .oc-image img {
     max-width: 250px;
     height: auto;
+    user-select: none;
+    -webkit-user-drag: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;
+    pointer-events: none; 
 }
 
 .oc-description {
@@ -264,6 +275,11 @@ footer {
     #about-profile img {
         width: 120px;
         height: 120px;
+        user-select: none;
+        -webkit-user-drag: none; 
+        -moz-user-select: none;  
+        -ms-user-select: none;
+        pointer-events: none; 
     }
 
     .oc-image img {
@@ -341,6 +357,11 @@ footer {
     #about-profile img {
         width: 160px;
         height: 160px;
+        user-select: none;
+        -webkit-user-drag: none; 
+        -moz-user-select: none;  
+        -ms-user-select: none;
+        pointer-events: none; 
     }
 
     .oc-content {
@@ -366,6 +387,11 @@ footer {
     .oc-image img {
         max-width: 180px;
         height: auto;
+        user-select: none;
+        -webkit-user-drag: none; 
+        -moz-user-select: none;  
+        -ms-user-select: none;
+        pointer-events: none; 
     }
 
     .oc-description {

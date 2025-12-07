@@ -17,6 +17,11 @@
 }
 .vee-image img {
   max-width: 100%;
+  user-select: none;
+  -webkit-user-drag: none; 
+  -moz-user-select: none;  
+  -ms-user-select: none;
+  pointer-events: none; 
 }
 .vee-image figcaption {
     font-size: 0.95rem;
@@ -41,6 +46,11 @@
 }
 .vee-grid img {
   width: 100%;
+  user-select: none;
+  -webkit-user-drag: none; 
+  -moz-user-select: none;  
+  -ms-user-select: none;
+  pointer-events: none; 
 }
 .vee-grid figcaption {
     font-size: 0.95rem;
