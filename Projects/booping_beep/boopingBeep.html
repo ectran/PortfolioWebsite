@@ -7,8 +7,7 @@
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
     <link rel="stylesheet" href="../../home.css">
     <link rel="stylesheet" href="../../Projects/projects.css"> 
-    <link rel="stylesheet" href="boopingBeep.css">
-    <link rel="stylesheet" href="../sntruggled/sntruggled.css">
+    <link rel="stylesheet" href="../projectsPage.css">
 </head>
 
 <body>
@@ -44,52 +43,84 @@
             <h1>BOOPING BEEP</h1>
         </section>
 
-        <img src="../assets/boopingBeep.png" class="project-logo">
+        <div class="project-logo video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2KB99jYnFAg?si=-OYa3HtZDbLJdx1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
-        <!-- Game Description -->
-        <section class="project-details">
-            <div class="project-description">
-                <p><em>Booping Beep</em> is a 2D endless runner created for a 2025 Spring Game Jam hosted by SPIN_GameJam / GDC Northridge / VGDA. Players control a bee named Beep—dodging through endless obstacles and collecting power-ups along the way. Booping Beep was developed by a team of four within a 75-hour time limit, all participating in their first game jam. <em>Booping Beep</em> is also heavily inspired by the mobile game, Jetpack Joyride.</p>
-                <a href="https://veiix.itch.io/booping-beep" class="read-more" target="_blank" rel="noopener noreferrer">[ Play on itch.io! ]</a>
-
-                <h2>GAMEPLAY VIDEO</h2>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2KB99jYnFAg?si=Nx0-K-QprpdfHblS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-            </div>
-
-            <div class="project-credits">
-                <h2>CREDITS</h2>
-                    <h3>Emily Tran – Design Lead / Art & Animation</h3>
-                        <p>Created and integrated character art and animations.</p>
-                    <h3>Nathan Lam – Art</h3>
-                        <p>Created and integrated obstacle/environmental art.</p>
-                    <h3>Angela Santos – Audio / UI / Art</h3>
-                        <p>Produced music; developed UI systems; created title scene art.</p>
-                    <h3>William Licup – Programming</h3>
-                        <p>Developed gameplay mechanics and supporting systems.</p>
-            </div>
-            
-            <!-- My Contributions -->
-            <section class="contributions">
-                <h2>MY CONTRIBUTIONS</h2>
-                <p>Below are the sprites and animations I designed and implemented for this project.</p>
-            </section>
-
-            <div class="screenshots-grid">
-                <img src="assets/beepSheet.png" alt="Screenshot 1">
-                <img src="assets/beepChonk.png" alt="Screenshot 2">
-                <img src="assets/beepHonk.gif" alt="Screenshot 3">
-                <img src="assets/beepSpeed.gif" alt="Screenshot 4">
-                <img src="assets/beepShield.gif" alt="Screenshot 5">
-                <img src="assets/beepBoth.gif" alt="Screenshot 6">
-            </div>
+        <!-- Project Tags -->
+        <section class="project-tags">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>2D</span>
+            <span>Endless Runner</span>
+            <span>Game Jam</span>
+            <span>Playable</span>
+            <span>WebGL</span>
         </section>
 
-        <!-- Software -->
+        <!-- Game Description -->
+        <section class="project-description">
+            <p><em>Booping Beep</em> is a fast-paced 2D endless runner created for the 2025 Spring Game Jam hosted by SPIN Game Jam, GDC Northridge, and VGDA. Players control a bee named Beep as they weave through an increasingly chaotic stream of obstacles while collecting power-ups and chasing high scores.</p>
+            <p>Developed by a team of four within a 75-hour time limit, the game focuses on quick reactions and arcade-style gameplay inspired by classic mobile runners. I served as design lead and technical artist, contributing to gameplay systems, visual polish, and overall game feel.</p>
+            <a href="https://veiix.itch.io/booping-beep" class="read-more" target="_blank">PLAY ON ITCH.IO</a>
+        </section>
+        
+        <!-- Project Credits -->
+        <section class="project-credits">
+            <h2>CREDITS</h2>
+            <p>Emily Tran: Design Lead / Technical Artist & Animator</p>
+            <p>Nathan Lam: Technical Artist</p>
+            <p>Angela Santos: Audio & UI Designer / Artist</p>
+            <p>William Licup: Gameplay Programmer</p>
+
+            <h2>GAME GALLERY</h2>
+        </section>
+
+        <!-- Game Screenshots Grid -->
+        <div class="screenshots-grid">
+            <img src="../assets/1bobe.png" class="gallery-item">
+            <img src="../assets/boopingBeep.png" class="gallery-item">
+            <img src="assets/2bobe.gif" class="gallery-item">
+            <img src="assets/2bobe.png" class="gallery-item">
+            <img src="assets/3bobe.png" class="gallery-item">
+        </div>
+        
+        <!-- My Contributions -->
+        <section class="contributions">
+            <h2>MY CONTRIBUTIONS</h2>
+                <p>- Served as design lead, guiding the overall visual direction of the game.<br>
+                - Designed and animated the player (Bee) and power-up bug assets.<br>
+                - Integrated visual assets and animations into Unity.<br>
+                - Debugged and refined power-up systems.
+                </p>
+
+            <h2>DEVELOPMENT GALLERY</h2>
+        </section>
+
+        <!-- Development Screenshots Grid -->
+        <div class="screenshots-grid">
+            <img src="assets/beepSheet.png" class="gallery-item">
+            <img src="assets/beepChonk.png" class="gallery-item">
+            <img src="assets/beepHonk.gif" class="gallery-item">
+            <img src="assets/beepSpeed.gif" class="gallery-item">
+            <img src="assets/beepShield.gif" class="gallery-item">
+            <img src="assets/beepBoth.gif" class="gallery-item">
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-controls">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Software Used -->
         <section class="software">
             <h2>SOFTWARE</h2>
-                <p>Unity, Aseprite & FL Studio</p>
+            <p>Unity, Aseprite, MediBang Paint & FL Studio</p>
         </section>
 
     </div>
@@ -108,6 +139,45 @@
         hamburger.classList.toggle('open');
         });
     </script>
+
+    <!-- Lightbox -->
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox-close');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+
+        let currentIndex = 0;
+
+        function showLightbox(index) {
+            currentIndex = index;
+            lightboxImg.src = galleryItems[index].src;
+            lightbox.style.display = 'flex';
+        }
+
+        galleryItems.forEach((item, i) => {
+            item.addEventListener('click', () => showLightbox(i));
+        });
+
+        closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        });
+
+        // Close on click outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) lightbox.style.display = 'none';
+        });
+        </script>
 
 </body>
 </html>

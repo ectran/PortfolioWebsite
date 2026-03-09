@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Tran - Portfolio/Projects/Fitch</title>
+    <title>Emily Tran - Portfolio/Projects/BoopingBeep</title>
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
     <link rel="stylesheet" href="../../home.css">
     <link rel="stylesheet" href="../../Projects/projects.css"> 
-    <link rel="stylesheet" href="../booping_beep/boopingBeep.css"> 
-    <link rel="stylesheet" href="fitch.css">
+    <link rel="stylesheet" href="../projectsPage.css">
 </head>
 
 <body>
@@ -44,37 +43,53 @@
             <h1>FITCH</h1>
         </section>
 
-        <img src="../assets/fitch.png" class="project-logo">
+        <video class="project-logo" autoplay loop muted playsinline>
+            <source src="assets/fitchPrototype2.mov" type="video/mp4">
+        </video>
 
-        <!-- Game Description + Credits -->
-        <section class="project-details">
-
-            <div class="project-description">
-                <p><em>Fitch</em> is a 2D Metroidvania game being developed independently. Players navigate through diverse environments exploring the rumors and origins of it all while accompanied by a fox companion that grants special powers. </p>
-            </div>
-
-            <div class="project-credits">
-                <h2>CURRENT TEAM</h2>
-                    <h3>Emily Tran – Programming / Art / Game Design</h3>
-                        <p>Developing gameplay systems; creating all art assets; designing core mechanics and features.</p>
-                    <h3>Eve Chhom – Audio</h3>
-                        <p>Composing music and SFX.</p>
-            </div>
-
-            <p class="dev-note">While still in development, the sprites and videos below showcases mini-prototypes to experiment with player movement and asethetic. </p>
-            <video controls width="100%" style="max-width: 800px; margin-bottom: 20px; display: block;">
-                <source src="assets/fitchPrototype1.mp4" type="video/mp4">
-            </video>
-            <video controls width="100%" style="max-width: 800px; margin-bottom: 20px; display: block;">
-                <source src="assets/fitchPrototype2.mov" type="video/mp4">
-            </video>
-            <img src="assets/fitchMC.gif" alt="Screenshot 1">
+        <!-- Project Tags -->
+        <section class="project-tags">
+            <span>Unity</span>
+            <span>2D</span>
+            <span>Visual Style Exploration</span>
+            <span>Animation</span>
+            <span>Prototype</span>
         </section>
 
-        <!-- Software -->
+        <!-- Game Description -->
+        <section class="project-description">
+            <p><em>Fitch</em> is a 2D visual and animation prototype created to explore character movement, sprite animation, and art direction for a Metroidvania-inspired game. Players control Fitch, a small adventurer accompanied by a fox companion capable of granting unique abilities.</p>
+            <p>This solo project focuses on experimenting with animation pipelines, visual style development, and responsive character movement while establishing the foundation for a potential larger game project.</p>
+        </section>
+        
+        <!-- Project Credits -->
+        <section class="project-credits">
+            <h2>CREDITS</h2>
+            <p>Emily Tran: Solo Developer (Programming, Art, Design)</p>
+
+            <h2>ADDITIONAL ASSETS/ART</h2>
+        </section>
+
+        <!-- Additional Art Screenshots Grid -->
+        <div class="screenshots-grid">
+            <img src="assets/fitchPrototype1.gif" class="gallery-item">
+            <img src="assets/fitchMC.gif" class="gallery-item">
+        </div>
+        
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-controls">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Software Used -->
         <section class="software">
             <h2>SOFTWARE</h2>
-                <p>Unity, Aseprite, FL Studio</p>
+            <p>Unity & Aseprite</p>
         </section>
 
     </div>
@@ -93,6 +108,45 @@
         hamburger.classList.toggle('open');
         });
     </script>
-    
+
+    <!-- Lightbox -->
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox-close');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+
+        let currentIndex = 0;
+
+        function showLightbox(index) {
+            currentIndex = index;
+            lightboxImg.src = galleryItems[index].src;
+            lightbox.style.display = 'flex';
+        }
+
+        galleryItems.forEach((item, i) => {
+            item.addEventListener('click', () => showLightbox(i));
+        });
+
+        closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            lightboxImg.src = galleryItems[currentIndex].src;
+        });
+
+        // Close on click outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) lightbox.style.display = 'none';
+        });
+        </script>
+
 </body>
 </html>

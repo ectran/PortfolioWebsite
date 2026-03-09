@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../../home.css">
   <link rel="stylesheet" href="../../Projects/projects.css"> 
   <link rel="stylesheet" href="meet_my_oc.css">
+  <link rel="stylesheet" href="../../Projects/projectsPage.css">
 </head>
 
 <body>
@@ -52,7 +53,7 @@
         </p>
       </div>
       <figure class="vee-image">
-        <img src="assets/veeMCSkin.png" alt="Minecraft skin that started it all">
+        <img src="assets/veeMCSkin.png" class="lightbox-trigger" alt="Minecraft skin that started it all">
         <figcaption>The Minecraft skin that started it all.</figcaption>
       </figure>
     </section>
@@ -62,7 +63,7 @@
       <h2>2020</h2>
       <div class="vee-grid">
         <figure>
-          <img src="assets/vee2020.png" alt="2020 drawing">
+          <img src="assets/vee2020.png" class="lightbox-trigger" alt="2020 drawing">
           <figcaption>A drawing of my Minecraft skin.</figcaption>
         </figure>
       </div>
@@ -83,7 +84,7 @@
       <h2>2021</h2>
       <div class="vee-grid">
         <figure>
-          <img src="assets/vee2021.png" alt="2021 stylized version">
+          <img src="assets/vee2021.png" class="lightbox-trigger"alt="2021 stylized version">
           <figcaption>A more stylized, revamped version of her.</figcaption>
         </figure>
       </div>
@@ -94,7 +95,7 @@
       <h2>2022</h2>
       <div class="vee-grid">
         <figure>
-          <img src="assets/vee2022.png".png" alt="2022 cartoonish revision">
+          <img src="assets/vee2022.png" class="lightbox-trigger" alt="2022 cartoonish revision">
           <figcaption>A cartoonish revision (greyscale has a soft spot in my heart).</figcaption>
         </figure>
       </div>
@@ -105,11 +106,11 @@
       <h2>2023</h2>
       <div class="vee-grid">
         <figure>
-          <img src="assets/vee2023v1.png" alt="2023 unfinished sketch">
+          <img src="assets/vee2023v1.png" class="lightbox-trigger" alt="2023 unfinished sketch">
           <figcaption>An unfinished color sketch, testing saturation vs. reddish tones.</figcaption>
         </figure>
         <figure>
-          <img src="assets/vee2023v2.png" alt="2023 framed samoyed">
+          <img src="assets/vee2023v2.png" class="lightbox-trigger" alt="2023 framed samoyed">
           <figcaption>A small framed drawing for backgrounds, featuring a tiny samoyed (my favorite dog breed!).</figcaption>
         </figure>
       </div>
@@ -120,7 +121,7 @@
       <h2>2024</h2>
       <div class="vee-grid">
         <figure>
-          <img src="assets/vee2024.png" alt="2024 full-body outfit">
+          <img src="assets/vee2024.png" class="lightbox-trigger" alt="2024 full-body outfit">
           <figcaption>Her first developed full-body outfit.</figcaption>
         </figure>
       </div>
@@ -131,19 +132,29 @@
       <h2>2025</h2>
       <div class="vee-grid">
         <figure>
-          <img src="assets/vee2025v1.png" alt="2025 revised outfit">
+          <img src="assets/vee2025v1.png" class="lightbox-trigger" alt="2025 revised outfit">
           <figcaption>A revised outfit, mostly finalized! Just need to finish fleshing out the lower half and rendering it all.</figcaption>
         </figure>
         <figure>
-          <img src="assets/vee2025v2.png" alt="2025 chibi version">
+          <img src="assets/vee2025v2.png" class="lightbox-trigger" alt="2025 chibi version">
           <figcaption>A stylized chibi version.</figcaption>
         </figure>
         <figure>
-          <img src="../assets/veeProfileFull.png" alt="2025 pixel version">
+          <img src="../assets/veeProfileFull.png" class="lightbox-trigger" alt="2025 pixel version">
           <figcaption>A stylized pixel art version.</figcaption>
         </figure>
       </div>
     </section>
+
+    <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <div class="lightbox-controls">
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
+      </div>
+      <img class="lightbox-content" id="lightbox-img" src="" alt="Artwork">
+  </div>
 
     <!-- Final Notes -->
     <section class="vee-final">
@@ -170,5 +181,55 @@
       hamburger.classList.toggle('open');
     });
   </script>
+
+    <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('lightbox-close');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    const images = Array.from(document.querySelectorAll('.lightbox-trigger'));
+    let currentIndex = 0;
+
+    // Open Lightbox
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentIndex = index;
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    // Close Lightbox
+    closeBtn.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    // Navigate
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        lightboxImg.src = images[currentIndex].src;
+    });
+
+    // Close when clicking outside image
+    lightbox.addEventListener('click', e => {
+        if(e.target === lightbox) lightbox.style.display = 'none';
+    });
+
+    // Keyboard navigation (optional)
+    document.addEventListener('keydown', e => {
+        if(lightbox.style.display === 'flex') {
+            if(e.key === 'ArrowLeft') prevBtn.click();
+            if(e.key === 'ArrowRight') nextBtn.click();
+            if(e.key === 'Escape') closeBtn.click();
+        }
+    });
+    </script>
 </body>
 </html>
