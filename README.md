@@ -4,4 +4,4 @@ This is my personal portfolio website, showcasing my projects, artwork, and prof
 
 **Live site:** [https://ectran.github.io/PortfolioWebsite/](https://ectran.github.io/PortfolioWebsite/)
 
-© 2025 Emily Tran
+© 2026 Emily Tran
