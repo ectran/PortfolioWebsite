@@ -558,8 +558,16 @@ li{
     appearance:none;
     -webkit-appearance:none;
 
-    color:var(--text);
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
     text-decoration:none;
+}
+
+.art-filters button:focus,
+.art-filters button:active,
+.art-filters button:visited {
+    color: var(--text);
 }
 
 .art-filters button:hover{
