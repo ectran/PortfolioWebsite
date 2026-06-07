@@ -1,78 +1,932 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily Tran - Portfolio/Home</title>
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Emily Tran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <div class="page-container">
 
-        <!-- Header Section -->
-        <section class="head">
-            <h1>EMILY TRAN'S PORTFOLIO</h1>
-            <h2>WELCOME!</h2>
-            <div class="socials">
-                <a href="Emily Tran RESUME.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-                <a href="https://linkedin.com/in/emily-tran-25062028b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/ectran" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://veiix.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io</a>
-            </div>
-            <div class="nav-links">
-                <a href="index.html" class="active">HOME</a>
-                <a href="Projects/projects.html">PROJECTS</a>
-                <a href="Artwork/artwork.html">ARTWORK</a>
-                <a href="Contact/contact.html">CONTACT</a>
-            </div>
-        </section>
+<!-- NAVIGATION TAB -->
+<nav class="nav">
+    <div class="brand">EMILY TRAN</div>
+    <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#art">ART</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>ABOUT</h2>
+<!-- COVER PAGE -->
+<section class="hero">
+    <h1>EMILY TRAN</h1>
+    <h2>GAMEPLAY PROGRAMMER • TECHNICAL DESIGNER • 2D ARTIST</h2>
 
-            <div class="focus-strip">
-                <span>Gameplay Programming</span>
-                <span>Systems Design</span>
-                <span>Unity Development</span>
-                <span>2D Art & Animation</span>
-            </div>
-            
-            <div class="about-content">
-                <div id="about-text">
-                    <p>Heyo! I’m Emily, a gameplay programmer and 2D artist focused on building systems-driven games that combine expressive mechanics, strong feedback loops, and stylized visuals. I enjoy experimenting across genres, but I specialize in Unity-based development, gameplay systems, and pixel art/2D animation.</p>
-                    <p>This site is a collection of my game projects, artwork, and technical experiments in gameplay programming, AI systems, and interactive design. Thanks for stopping by!</p>
-                </div>
-                <div id="about-profile">
-                    <img src="Home/assets/veeProfile.png" alt="Emily Tran Profile" 
-                        oncontextmenu="return false;" draggable="false">
-                </div>
-            </div>
-        </section>
+    <div class="hero-image">
+        <img src="coverart.png" alt="Cover Art">
 
-        <!-- OC Section -->
-        <section id="oc">
-            <h2>MEET MY OC</h2>
-            <div class="oc-content">
-                <div class="oc-image">
-                    <img src="Home/assets/veeProfileFull.png" alt="Full OC Artwork" 
-                        oncontextmenu="return false;" draggable="false">
-                </div>
-                <div class="oc-description">
-                    <p>Meet Vee, my original character and creative persona. While her design leans dark and stylized, her personality is more soft-spoken and warm, with a curious and introspective nature.</p>
-                    <p>She serves as a personal creative anchor across my artwork and visual design work, allowing me to explore character expression, mood, and storytelling through illustration.</p>
-                    <a href="Home/meet_my_oc/meet_my_oc.html" class="read-more">SEE HER DEVELOPMENT</a>
-                </div>
-            </div>
-        </section>
-
+        <div class="hero-image-text">
+            PORTFOLIO
+        </div>
     </div>
 
-    <footer>
-        © 2026 Emily Tran
-    </footer>
-</body>
+    <div class="hero-panel">
+        <div class="email">
+        <p>emilyclaratran@yahoo.com</p>
+        </div>
+        <div class="phone">
+        <p>(805) 248-9211</p>
+        </div>
+    </div>
+</section>
 
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
+    <h3>ABOUT</h3>
+    <div class="about-layout">
+
+        <div class="left-col">
+            <aside class="card profile-card">
+                <div class="portrait">
+                    <img src="veeProfileFull.png" alt="OC: VEE" />
+                </div>
+
+                <div class="profile-meta">
+                    <p><b>ALIAS:</b> vee</p>
+                    <p><b>ID:</b> veiix</p>
+                    <p><b>STATUS:</b> building systems, exploring mechanics, prototyping ideas</p>
+                </div>
+            </aside>
+
+        <div class="contact-grid">
+            <a class="contact-card" target="_blank" href="Emily Tran RESUME.pdf">
+                <img src="icons/resume.svg" alt="">
+                <span>Resume</span>
+            </a>
+
+            <a class="contact-card" target="_blank" href="https://www.linkedin.com/in/emily-tran-25062028b/">
+                <img src="icons/linkedin.svg" alt="">
+                <span>LinkedIn</span>
+            </a>
+
+            <a class="contact-card" target="_blank" href="https://github.com/ectran">
+                <img src="icons/github.svg" alt="">
+                <span>GitHub</span>
+            </a>
+
+            <a class="contact-card" target="_blank" href="https://veiix.itch.io/">
+                <img src="icons/itchio.svg" alt="">
+                <span>Itch.io</span>
+            </a>
+        </div>
+
+            <div class="card section-block">
+                <h4>SKILLSET</h4>
+
+                <div class="skill-category">
+                    <h5>Core</h5>
+                    <div class="skill-tags">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Gameplay Systems</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h5>Backend</h5>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h5>Tools</h5>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>VS Code</span>
+                        <span>Aseprite</span>
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="card section-block">
+                    <h4>QUEST LOG</h4>
+                    <h5>Gameplay Programmer • Technical Designer • Software Engineer</h5>
+                    <ul>
+                        <li>Currently seeking gameplay programming, game development, and software engineering opportunities.</li>
+                        <li>Open to internships, full-time roles, freelance work, game jams, and creative collaborations.</li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="right-col">
+            <!---<div class="edu-exp-grid"> --->
+                <div class="card section-block">
+                    <h4>ABOUT ME</h4>
+                        <div class="about-me">
+                        <p>Heyo! I’m Emily, a <u>gameplay programmer</u> and <u>2D artist</u> who builds systems-driven games where mechanics, visuals, and feel all work together.</p>
+                        <p>I’m most interested in the space between art and engineering: where code shapes movement, animation supports decision-making, and UI quietly changes how a player thinks. I usually work in Unity, building gameplay systems, prototyping mechanics, and creating 2D/pixel art and animation that support the overall player experience.</p>
+                        <p>This site is a collection of my game projects, creative experiments, and technical work in gameplay systems, AI, and interactive design. Thanks for stopping by :)</p>
+                        </div>
+                </div>
+
+                <div class="card section-block">
+                    <div class="education">
+                    <h4>EDUCATION</h4>
+                    <h5>Bachelor of Science in Computer Science</h5>
+                    <p>Minor in Data Science</p>
+                    <p>California State Polytechnic University, Pomona</p>
+                    <p>Aug 2022 – May 2026</p>
+                    </div>
+                </div>
+           <!--- </div> --->
+
+                <div class="card section-block">
+                    <h4>EXPERIENCE</h4>
+
+                    <div class="timeline-item">
+                        <h5 class="role">Unity Developer</h5>
+                        <p>Virtual Reality Lab @ Cal Poly Pomona</p>
+                        <p class="muted">Mar 2025 – Jun 2025</p>
+                        <ul>
+                            <li>VR zombie survival FPS (Unity + XR Interaction Toolkit)</li>
+                            <li>VR gameplay systems, enemy AI, 3D spatial audio</li>
+                            <li>Playtesting & iterative improvements</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h5 class="role">Researcher</h5>
+                        <p>REU @ Texas A&M University</p>
+                        <p class="muted">May 2024 – Aug 2024</p>
+                        <ul>
+                            <li>Pygame simulations for autonomous algorithms</li>
+                            <li>A* and D* Lite pathfinding implementation</li>
+                            <li>Comparative testing & technical presentations</li>
+                        </ul>
+                    </div>
+                </div>
+
+        </div>
+
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+    <h3>PROJECTS</h3>
+    <div class="sub">
+        <h6>// games, prototypes and more</h6>
+        <p class="section-counter">
+            [ 07 PROJECTS ARCHIVED ]
+        </p>
+    </div>
+
+    <div class="project-list">
+
+        <!-- GAMBLERS ADDICT -->
+        <article class="project-card">
+
+            <div class="project-video">
+                <iframe
+                    src="https://www.youtube.com/embed/GYUwAuYJZnA?si=GvjKNlYovZiaEe4Q"
+                    title="GAMBLER'S ADDICT"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="project-engine">UNITY</div>
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>GAMBLER'S ADDICT</h4>
+
+                    <p class="project-role">
+                        Project Lead • Gameplay Programming • Systems Design • Art • UI • Animation
+                    </p>
+
+                    <p class="project-description">
+                        A 2D bullet-hell roguelike built around adaptive betting and dynamic difficulty, where risk directly influences combat outcomes and rewards. Players must balance survival and aggression through a risk/reward economy that evolves with performance.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Bullet Hell</span>
+                        <span>Adaptive Systems</span>
+                        <span>Gameplay AI</span>
+                        <span>Risk/Reward Systems</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="project_details/gamblers_addict.html">Details</a>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- SNTRUGGLED -->
+        <article class="project-card">
+
+            <div class="project-video">
+                <iframe
+                    src="https://www.youtube.com/embed/2cnyOMvNU2k?si=qAf7nYMCHJfREFyD"
+                    title="SNTRUGGLED"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="project-engine">UNITY</div>
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>SNTRUGGLED</h4>
+
+                    <p class="project-role">
+                        Gameplay Programmer • VR Systems
+                    </p>
+
+                    <p class="project-description">
+                        A VR first-person zombie survival experience built in Unity, focusing on immersive motion-based combat, spatial interactions, and enemy encounter systems designed for physical player engagement.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>VR</span>
+                        <span>FPS</span>
+                        <span>Research Lab</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="project_details/sntruggled.html">Details</a>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- FUNK VS FRIGHT -->
+        <article class="project-card">
+            <div class="project-video">
+                <iframe
+                    src="https://www.youtube.com/embed/iyeOv2VAYFw?si=_Wi_lciT4wfnwtnP"
+                    title="FUNK VS FRIGHT"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="project-engine">UNITY</div>
+                <div class="project-award">✦ 1ST PLACE</div>
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>FUNK VS FRIGHT</h4>
+
+                    <p class="project-role">
+                        Project Lead • Technical Artist • UI & Narrative Designer • Animation
+                    </p>
+
+                    <p class="project-description">
+                        A 2.5D rhythm combat game where players attack and defend through timed musical input, combining rhythm mechanics with narrative-driven enemy encounters.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Rhythm Game</span>
+                        <span>2.5D</span>
+                        <span>Narrative</span>
+                        <span>Game Jam</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://turtlelord53.itch.io/funkvsfright" target="_blank"rel="noopener noreferrer">Play Game</a>
+                    <a href="project_details/funk_vs_fright.html">Details</a>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- BOOPING BEEP -->
+        <article class="project-card">
+            <div class="project-video">
+                <iframe
+                    src="https://www.youtube.com/embed/2KB99jYnFAg?si=-OYa3HtZDbLJdx1A"
+                    title="BOOPING BEEP"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="project-engine">UNITY</div>
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>BOOPING BEEP</h4>
+
+                    <p class="project-role">
+                        Design Lead • Technical Artist • Animator
+                    </p>
+
+                    <p class="project-description">
+                        A fast-paced endless runner designed around high-speed reaction gameplay, hazard avoidance, and score-chasing arcade loops.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Endless Runner</span>
+                        <span>Game Jam</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://veiix.itch.io/booping-beep" target="_blank"rel="noopener noreferrer">Play Game</a>
+                    <a href="project_details/booping_beep.html">Details</a>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<div class="section-footer">
+    <a href="projects.html" class="view-more">
+        View All Projects →
+    </a>
+</div>
+
+<!-- ART SECTION -->
+<section id="art" class="section">
+    <h3>ART</h3>
+    <h6>// pixel art, digital portraits, game assets and more</h6>
+    <p class="section-counter">
+        [ 39 ARTWORKS ARCHIVED ]
+    </p>
+
+    <div class="art-filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="pixel">Pixel Art</button>
+        <button data-filter="portrait">Portraits</button>
+        <button data-filter="game">Game Art</button>
+    </div>
+
+    <div class="art-gallery">
+
+        <div class="art-item" data-category="portrait pixel" data-desc="A determined and energetic character driven by curiosity and conviction. Her warm personality contrasts with the more structured world around her, making her someone who naturally challenges expectations.">
+            <img src="art/art01.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Esper</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait pixel" data-desc="Calm, disciplined, and dependable. Rowan carries himself with quiet confidence, though beneath his composed exterior is a deeply thoughtful and compassionate person..">
+            <img src="art/art02.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Rowan</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="A solitary traveler with a quiet, melancholic presence. Armed with an oversized pair of scissors, she spends her time helping others while searching for something she can't quite name herself.">
+            <img src="art/art03.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Isol</h4>
+                <p>Original Character </p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="The protagonist of Gambler's Addict. Designed to embody the exhaustion and obsession of someone forever chasing the next win, her tired eyes tell the story before gameplay even begins.">
+            <img src="art/art04.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>The Gambler</h4>
+                <p>Game Sprite</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait" data-desc="An original character illustration. Part of an ongoing exploration of portrait rendering and stylized design.">
+            <img src="art/art06.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Unnamed OC I</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait" data-desc="An original character illustration. Part of an ongoing exploration of portrait rendering and stylized design.">
+            <img src="art/art05.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Unnamed OC II</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait pixel" data-desc="Meet Vee, my creative persona and recurring original character. Through her design, I explore themes of curiosity, introspection, and identity while incorporating visual motifs that reflect aspects of my own personality.">
+            <img src="art/art07.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Vee Portrait</h4>
+                <p>Personal Persona</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="" data-desc="A full-body exploration of Vee's design language and silhouette. This piece focuses on refining her visual identity through clothing, proportions, and character details.">
+            <img src="art/art08.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Vee Full Body</h4>
+                <p>Personal Persona • Work In Progress</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait" data-desc="A character inspired by my Minecraft skin and reimagined through my own art style. This design served as an experiment in translating a simple avatar into a more developed character concept.">
+            <img src="art/art09.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Unnamed OC III</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait" data-desc="A character inspired by a Minecraft skin and reimagined through my own art style. This design served as an experiment in translating a simple avatar into a more developed character concept.">
+            <img src="art/art10.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Unnamed OC IV</h4>
+                <p>Digital Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait" data-desc="An original character illustration. Part of an ongoing exploration of portrait rendering and stylized design.">
+            <img src="art/art11.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Unnamed OC V</h4>
+                <p>Digital Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait" data-desc="An original character illustration. Part of an ongoing exploration of portrait rendering and stylized design.">
+            <img src="art/art12.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Unnamed OC VI</h4>
+                <p>Digital Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait" data-desc="An original character inspired by Hornet from Hollow Knight.">
+            <img src="art/art13.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Hornet</h4>
+                <p>Original Character • Fan Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait pixel" data-desc="A very simplified version of my OC, Vee. The animation explores personality and motion through a simplified design approach. ">
+            <img src="art/art14.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Vee Simplified</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait pixel" data-desc="An animated portrait of my friend's character, Digi. The animation was created to highlight her elegant yet mischievous personality through subtle movement and expression.">
+            <img src="art/art15.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Digi</h4>
+                <p>Orignal Character • Fan Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="A sprite created for a witch-themed game concept. Designed as an early exploration of character movement, readability, and visual style.">
+            <img src="art/art16.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Witch</h4>
+                <p>Game Art Concept</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait game" data-desc="An animated portrait of Mara from Funk vs Fright. Her reserved demeanor and rabbit-inspired aesthetic are reflected through subtle expressions and restrained movement.">
+            <img src="art/art17.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Mara Portrait</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait game" data-desc="Mara wearing her signature bunny mask. The mask serves as an extension of her identity and visual symbolism within the game's cast.">
+            <img src="art/art18.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Mara Masked</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait game" data-desc="An animated portrait of Baxter. Large expressive eyes and exaggerated animation help capture his energetic and outgoing personality.">
+            <img src="art/art19.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Baxter Portrait</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait game" data-desc="Baxter wearing his bat-inspired mask. Designed to reinforce his theatrical presence and larger-than-life character.">
+            <img src="art/art20.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Baxter Masked</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="portrait game" data-desc="The protagonist of Funk vs Fright. A confident and energetic performer whose personality shines through rhythm, style, and her mysterious alter ego, Phonk.">
+            <img src="art/art21.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Funk</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="In-game sprite work created for Funk. Designed for readability, animation clarity, and personality-driven movement.">
+            <img src="art/art22.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Funk Sprite</h4>
+                <p>Character Sprite</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="Gameplay sprite created for Baxter, emphasizing expressive silhouettes and energetic animation.">
+            <img src="art/art23.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Baxter Sprite</h4>
+                <p>Character Sprite</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="Gameplay sprite created for Mara, balancing simplicity with a recognizable and distinctive visual identity.">
+            <img src="art/art24.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Mara Sprite</h4>
+                <p>Character Sprite</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="Beep with both power-ups active: the speed-enhancing Fireflies and protective Ladybug shield. Created for Booping Beep as a visual showcase of gameplay progression.">
+            <img src="art/art25.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Beep (Powered Up)</h4>
+                <p>Game Sprite</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="A simple looping animation of Beep in flight. Focused on creating charm and personality through minimal motion.">
+            <img src="art/art26.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Beep Idle Animation</h4>
+                <p>Game Sprite</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="A mysterious boss character from Gambler's Addict. His motives remain unknown, but his presence looms over the game's risk-driven world.">
+            <img src="art/art27.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Mr. Dealer</h4>
+                <p>Game Sprite</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="A visual mockup exploring the art direction for a witch-themed game concept. Features the protagonist alongside her fox companion.">
+            <img src="art/art28.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Witch & Fox Mockup</h4>
+                <p>Game Concept</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="game" data-desc="An art style exploration built directly in Unity. Created to test visual cohesion, lighting, and atmosphere for the project.">
+            <img src="art/art29.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Witch Mockup</h4>
+                <p>Game Concept</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="Run cycle animation for Seseme, a cat character created for a game concept. Focused on creating a responsive and appealing movement style.">
+            <img src="art/art30.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Seseme Run</h4>
+                <p>Game Concept</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="Parry animation exploring timing, anticipation, and combat feedback.">
+            <img src="art/art32.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Seseme Parry</h4>
+                <p>Game Concept</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="A death animation study emphasizing readability and emotional impact through exaggerated motion.">
+            <img src="art/art33.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Seseme Death</h4>
+                <p>Game Concept</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel game" data-desc="Early attack animation prototype used to explore combat feel and visual clarity.">
+            <img src="art/art34.gif" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Seseme Attack</h4>
+                <p>Game Concept</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel" data-desc="A hamster character inspired by myself. Created as a playful and simplified representation of my personality and interests.">
+            <img src="art/art35.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Emmy</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="pixel" data-desc="A hamster character inspired by my significant other. Designed as a companion piece to Emmy.">
+            <img src="art/art36.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Mammy</h4>
+                <p>Original Character</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="" data-desc="A real-life observational study completed in acrylic paint. Created to practice color, form, and traditional painting techniques.">
+            <img src="art/art37.jpg" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Acrylic Study</h4>
+                <p>Traditonal Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="" data-desc="A painting inspired by Lakeland from Final Fantasy XIV. Created to capture the region's distinctive atmosphere and color palette.">
+            <img src="art/art38.jpg" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Lakeland</h4>
+                <p>Traditional Art • Fan Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="game" data-desc="Early concept artwork for Beep and the game's collectible power-ups. Used to establish visual direction before implementation.">
+            <img src="art/art39.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Beep Concept Sheet</h4>
+                <p>Concept Art</p>
+            </div>
+        </div>
+
+        <div class="art-item" data-category="game" data-desc="Concept art exploring the user interface and visual presentation of Funk vs Fright. Focused on reinforcing the game's rhythm-driven identity and style.">
+            <img src="art/art40.png" alt="Artwork">
+            <div class="art-overlay">
+                <h4>Funk vs Fright UI Concept</h4>
+                <p>UI Design</p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<div class="section-footer">
+    <a href="art.html" class="view-more">
+        VIEW FULL GALLERY →
+    </a>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-backdrop"></div>
+
+    <div class="lightbox-content">
+        
+        <!-- LEFT: IMAGE -->
+        <div class="lightbox-media">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+
+        <!-- RIGHT: INFO PANEL -->
+        <div class="lightbox-info">
+            <h3 id="lightbox-title">Title</h3>
+            <p id="lightbox-type">Type</p>
+
+            <div class="lightbox-divider"></div>
+
+            <p id="lightbox-desc">
+                Description goes here...
+            </p>
+        </div>
+
+        <button class="lightbox-nav prev" id="lightbox-prev">‹</button>
+        <button class="lightbox-nav next" id="lightbox-next">›</button>
+
+        <button class="lightbox-close" id="lightbox-close">✕</button>
+    </div>
+</div>
+
+<script>
+const filterButtons = document.querySelectorAll(".art-filters button");
+const items = Array.from(document.querySelectorAll(".art-item"));
+
+function updateGallery(filter = "all") {
+
+    let visibleCount = 0;
+
+    items.forEach(item => {
+
+        const categories = item.dataset.category.split(" ");
+
+        const matches =
+            filter === "all" ||
+            categories.includes(filter);
+
+        if(matches && visibleCount < 6){
+            item.style.display = "block";
+            visibleCount++;
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        filterButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        updateGallery(btn.dataset.filter);
+    });
+});
+
+updateGallery("all");
+</script>
+
+<script>
+const lightbox = document.getElementById("lightbox");
+const imgEl = document.getElementById("lightbox-img");
+const titleEl = document.getElementById("lightbox-title");
+const typeEl = document.getElementById("lightbox-type");
+const descEl = document.getElementById("lightbox-desc");
+
+const closeBtn = document.getElementById("lightbox-close");
+const prevBtn = document.getElementById("lightbox-prev");
+const nextBtn = document.getElementById("lightbox-next");
+const backdrop = document.querySelector(".lightbox-backdrop");
+
+let currentIndex = 0;
+let activeItems = [];
+
+// get currently visible (filtered) items
+function getActiveItems() {
+    return items.filter(item => item.style.display !== "none");
+}
+
+items.forEach(item => {
+    item.addEventListener("click", () => {
+
+        const active = getActiveItems();
+        const index = active.indexOf(item);
+
+        openLightbox(index);
+    });
+});
+
+// open lightbox from item
+function openLightbox(index) {
+    activeItems = getActiveItems();
+    currentIndex = index;
+
+    const item = activeItems[currentIndex];
+    const img = item.querySelector("img");
+
+    imgEl.src = img.src;
+    titleEl.innerText = item.querySelector("h4")?.innerText || "Untitled";
+    typeEl.innerText = item.querySelector("p")?.innerText || "";
+    descEl.innerText = item.dataset.desc || "No description provided.";
+
+    lightbox.classList.remove("hidden");
+}
+
+// update content only
+function updateLightbox() {
+    const item = activeItems[currentIndex];
+    const img = item.querySelector("img");
+
+    imgEl.src = img.src;
+    titleEl.innerText = item.querySelector("h4")?.innerText || "Untitled";
+    typeEl.innerText = item.querySelector("p")?.innerText || "";
+    descEl.innerText = item.dataset.desc || "No description provided.";
+}
+
+// cycle prev/next
+prevBtn.addEventListener("click", () => {
+    activeItems = getActiveItems();
+    currentIndex = (currentIndex - 1 + activeItems.length) % activeItems.length;
+    updateLightbox();
+});
+
+nextBtn.addEventListener("click", () => {
+    activeItems = getActiveItems();
+    currentIndex = (currentIndex + 1) % activeItems.length;
+    updateLightbox();
+});
+
+// close
+function closeLightbox() {
+    lightbox.classList.add("hidden");
+    imgEl.src = "";
+}
+
+closeBtn.addEventListener("click", closeLightbox);
+backdrop.addEventListener("click", closeLightbox);
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+
+    if (e.key === "ArrowLeft") prevBtn.click();
+    if (e.key === "ArrowRight") nextBtn.click();
+});
+</script>
+
+<!-- CONTACT PAGE -->
+<section id="contact" class="section">
+    <h3>CONTACT</h3>
+
+    <div class="contact-layout">
+
+        <div class="card contact-message">
+            <h4>LET'S BUILD SOMETHING COOL</h4>
+
+            <p>
+                I’m always open to gameplay programming roles, game development opportunities, and creative collaborations.
+            </p>
+
+            <p>
+                If you're working on something interesting, have a project in mind, or simply want to connect, feel free to reach out.
+            </p>
+
+            <p>
+                Let's make something together! :D
+            </p>
+
+        </div>
+
+        <div class="card contact-info">
+            <h4>REACH OUT</h4>
+
+            <div class="contact-entry">
+                <span>Email</span>
+                <a href="mailto:emilyclaratran@yahoo.com">
+                    emilyclaratran@yahoo.com
+                </a>
+            </div>
+
+            <div class="contact-entry">
+                <span>PHONE</span>
+                <a href="tel:+18052489211">
+                    (805) 248-9211
+                </a>
+            </div>
+
+            <div class="contact-entry">
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/emily-tran-25062028b/" target="_blank">
+                    linkedin.com/in/emily-tran-25062028b
+                </a>
+            </div>
+
+            <div class="contact-entry">
+                <span>GitHub</span>
+                <a href="https://github.com/ectran" target="_blank">
+                    github.com/ectran
+                </a>
+            </div>
+
+            <div class="contact-entry">
+                <span>Itch.io</span>
+                <a href="https://veiix.itch.io" target="_blank">
+                    veiix.itch.io
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="section-footer">
+    <a href="#" class="view-more">
+        BACK TO TOP ↑
+    </a>
+</div>
+
+</body>
 </html>
