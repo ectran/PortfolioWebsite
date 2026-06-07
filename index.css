@@ -640,6 +640,29 @@ li{
     color:#f3f1ed;
 }
 
+.contact-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.contact-entry > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 /* ===================== */
 /* LIGHTBOX (ARTSTATION STYLE)
 /* ===================== */
