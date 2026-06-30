@@ -29,10 +29,16 @@
         </p>
     </div>
 
+    <div class="project-filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="game">Games</button>
+        <button data-filter="software">Software</button>
+    </div>
+
     <div class="project-list">
 
         <!-- GAMBLERS ADDICT -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
 
             <div class="project-video">
                 <iframe
@@ -59,7 +65,6 @@
 
                     <div class="project-tags">
                         <span>Bullet Hell</span>
-                        <span>Rougelike</span>
                         <span>Adaptive Systems</span>
                         <span>Gameplay AI</span>
                         <span>Risk/Reward Systems</span>
@@ -75,7 +80,7 @@
         </article>
 
         <!-- SNTRUGGLED -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
 
             <div class="project-video">
                 <iframe
@@ -93,7 +98,7 @@
                     <h4>SNTRUGGLED</h4>
 
                     <p class="project-role">
-                        Project Lead • Gameplay Programming • Systems Design • Art • UI • Animation
+                        Gameplay Programmer • VR Systems
                     </p>
 
                     <p class="project-description">
@@ -117,7 +122,7 @@
         </article>
 
         <!-- FUNK VS FRIGHT -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
             <div class="project-video">
                 <iframe
                     src="https://www.youtube.com/embed/iyeOv2VAYFw?si=_Wi_lciT4wfnwtnP"
@@ -159,8 +164,44 @@
 
         </article>
 
+        <!-- CALENDAR MEET -->
+        <article class="project-card" data-category="software">
+            <div class="project-image">
+                <img src="project_details/calendar_meet.png">
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>CALENDAR MEET</h4>
+
+                    <p class="project-role">
+                        Backend Developer • DevOps
+                    </p>
+
+                    <p class="project-description">
+                        A full-stack scheduling application for creating and managing events through an interactive calendar interface, featuring persistent data storage and backend-driven event management.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>PostgreSQL</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Pending-Status/CalendarMeet" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="project_details/calendar_meet.html">Details</a>
+                </div>
+            </div>
+        </article>
+
         <!-- BOOPING BEEP -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
             <div class="project-video">
                 <iframe
                     src="https://www.youtube.com/embed/2KB99jYnFAg?si=-OYa3HtZDbLJdx1A"
@@ -197,44 +238,45 @@
             </div>
         </article>
 
-        <!-- CALENDAR MEET -->
-        <article class="project-card">
+        <!-- FACEBOOK SOCIAL NETWORK ANALYSIS -->
+        <article class="project-card" data-category="software">
             <div class="project-image">
-                <img src="project_details/calendar_meet.png">
+                <img src="project_details/facebook.png">
             </div>
 
             <div class="project-content">
 
                 <div>
-                    <h4>CALENDAR MEET</h4>
+                    <h4>FACEBOOK SOCIAL NETWORK ANALYSIS</h4>
 
                     <p class="project-role">
-                        Backend Developer • DevOps
+                        Python Developer • Data Analysis
                     </p>
 
                     <p class="project-description">
-                        A full-stack scheduling application for creating and managing events through an interactive calendar interface, featuring persistent data storage and backend-driven event management.
+                        An interactive dashboard for exploring large-scale Facebook page networks using graph analytics and network visualization. Built with Python, Streamlit, and NetworkX to analyze relationship structures across eight page categories.
                     </p>
 
                     <div class="project-tags">
-                        <span>JavaScript</span>
-                        <span>Node.js</span>
-                        <span>React</span>
-                        <span>PostgreSQL</span>
-                        <span>AWS</span>
-                        <span>CI/CD</span>
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>NetworkX</span>
+                        <span>Graph Analysis</span>
+                        <span>Data Visualization</span>
+                        <span>Research</span>
+                        
                     </div>
                 </div>
 
                 <div class="project-links">
-                    <a href="https://github.com/Pending-Status/CalendarMeet" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="project_details/calendar_meet.html">Details</a>
+                    <a href="https://github.com/doom-boy/Facebook-Social-Network-Analysis" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="project_details/facebook.html">Details</a>
                 </div>
             </div>
         </article>
 
         <!-- THE AVENTURE OF MAMMY -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
             <div class="project-video">
                 <div class="project-image">
                     <img src="project_details/theAdventureOfMammyDemo.gif">
@@ -270,8 +312,7 @@
         </article>
 
         <!-- MAMMY.EXE -->
-        <article class="project-card">
-
+        <article class="project-card" data-category="game">
             <div class="project-video">
                 <iframe
                     src="https://www.youtube.com/embed/jI7EbadT0v0?si=yAps2FHIJZiU4kJS"
@@ -315,3 +356,29 @@
             BACK TO TOP ↑
         </a>
     </div>
+
+<script>
+const projectButtons = document.querySelectorAll(".project-filters button");
+const projectCards = document.querySelectorAll(".project-card");
+
+function updateProjects(filter = "all") {
+    projectCards.forEach(card => {
+        const categories = card.dataset.category.split(" ");
+
+        card.style.display =
+            filter === "all" || categories.includes(filter)
+                ? "block"
+                : "none";
+    });
+}
+
+projectButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        projectButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        updateProjects(btn.dataset.filter);
+    });
+});
+
+updateProjects();
+</script>

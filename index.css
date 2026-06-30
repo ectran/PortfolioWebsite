@@ -536,6 +536,44 @@ li{
     background:var(--bg);
 }
 
+.project-filters {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:32px;
+}
+
+.project-filters button {
+    padding:8px 16px;
+    border:1px solid var(--border);
+    background:var(--surface);
+
+    font-family:"IBM Plex Mono", monospace;
+    cursor:pointer;
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+
+    appearance:none;
+    -webkit-appearance:none;
+
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    text-decoration:none;
+}
+
+.project-filters button:hover {
+    transform:translateY(-2px);
+    background:var(--bg);
+}
+
+.project-filters button.active {
+    background:var(--text);
+    color:white;
+}
+
 .art-filters{
     display:flex;
     flex-wrap:wrap;

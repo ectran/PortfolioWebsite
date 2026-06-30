@@ -26,7 +26,7 @@
 <!-- COVER PAGE -->
 <section class="hero">
     <h1>EMILY TRAN</h1>
-    <h2>GAMEPLAY PROGRAMMER • TECHNICAL ARTIST • 2D ARTIST</h2>
+    <h2>GAMEPLAY ENGINEER • TECHNICAL ARTIST</h2>
 
     <div class="hero-image">
         <img src="coverart.png" alt="Cover Art">
@@ -90,33 +90,30 @@
                 <h4>SKILLSET</h4>
 
                 <div class="skill-category">
-                    <h5>Core</h5>
+                    <h5>Languages</h5>
                     <div class="skill-tags">
-                        <span>Unity</span>
                         <span>C#</span>
-                        <span>Gameplay Programming</span>
-                        <span>Game AI</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>JavaScript</span>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h5>Tools</h5>
+                    <h5>Software</h5>
                     <div class="skill-tags">
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>VS Code</span>
-                        <span>Aseprite</span>
+                        <span>Unity</span>
+                        <span>React</span>
+                        <span>Node.js</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h5>Additional</h5>
+                    <h5>Cloud & DevOps</h5>
                     <div class="skill-tags">
-                        <span>Python</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>PostgreSQL</span>
                         <span>AWS</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
                     </div>
                 </div>
 
@@ -128,8 +125,8 @@
                 <div class="card section-block">
                     <h4>ABOUT ME</h4>
                         <div class="about-me">
-                        <p>Heyo! I'm Emily, a <u>gameplay programmer</u>, <u>technical artist</u>, and computer science graduate from Cal Poly Pomona who enjoys building systems where code, design, and creativity intersect.</p>
-                        <p>My work focuses on gameplay programming, AI behaviors, progression systems, and player-facing mechanics in Unity. I enjoy exploring how small systems interact to create meaningful player experiences, whether that's adaptive difficulty, risk/reward economies, VR interactions, or combat mechanics.</p>
+                        <p>Heyo! I'm Emily, a <u>software engineer</u>, <u>technical artist</u>, and <u>computer science graduate</u> from Cal Poly Pomona who enjoys building systems where code, design, and creativity intersect.</p>
+                        <p>My favorite projects are the ones where engineering and creativity meet. I enjoy building gameplay systems, AI behaviors, developer tools, and interactive applications, and I'm always interested in how individual systems work together to create engaging experiences. Whether it's adaptive difficulty, VR interactions, data visualization, or full-stack software, I love figuring out how to turn ideas into something people can interact with.</p>
                         <p>Outside of programming, I also create 2D art, animation, and UI assets, which gives me a broader perspective on how gameplay, visuals, and player feedback come together. Some of my favorite projects have come from experimenting with ideas that weren't part of the original plan, turning unexpected discoveries into mechanics, features, or entirely new directions.</p>
                         <p>I'm always looking to collaborate with people who enjoy building things and pushing ideas further than they started. Feel free to reach out! :)</p>
                         </div>
@@ -153,24 +150,31 @@
                         <h5 class="role">Unity Developer</h5>
                         <p>Virtual Reality Lab @ Cal Poly Pomona</p>
                         <p class="muted">Mar 2025 – Jun 2025</p>
-                        <ul>
-                            <li>VR zombie survival FPS (Unity + XR Interaction Toolkit)</li>
-                            <li>VR gameplay systems, enemy AI, 3D spatial audio</li>
-                            <li>Playtesting & iterative improvements</li>
-                        </ul>
                     </div>
 
                     <div class="timeline-item">
                         <h5 class="role">Researcher</h5>
                         <p>REU @ Texas A&M University</p>
                         <p class="muted">May 2024 – Aug 2024</p>
-                        <ul>
-                            <li>Pygame simulations for autonomous algorithms</li>
-                            <li>A* and D* Lite pathfinding implementation</li>
-                            <li>Comparative testing & technical presentations</li>
-                        </ul>
                     </div>
                 </div>
+
+            <div class="card section-block">
+                <h4>AREAS</h4>
+
+                <div class="skill-category">
+                    <div class="skill-tags">
+                        <span>Software Engineering</span>
+                        <span>Gameplay Programming</span>
+                        <span>AI</span>
+                        <span>Full-Stack Development</span>
+                        <span>Technical Art</span>
+                    </div>
+                </div>
+                
+                </div>
+
+            </div>
 
         </div>
 
@@ -182,14 +186,20 @@
     <div class="sub">
         <h6>// games, prototypes and more</h6>
         <p class="section-counter">
-            [ 07 PROJECTS TOTAL ]
+            [ 08 PROJECTS TOTAL ]
         </p>
+    </div>
+
+    <div class="project-filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="game">Games</button>
+        <button data-filter="software">Software</button>
     </div>
 
     <div class="project-list">
 
         <!-- GAMBLERS ADDICT -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
 
             <div class="project-video">
                 <iframe
@@ -231,7 +241,7 @@
         </article>
 
         <!-- SNTRUGGLED -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
 
             <div class="project-video">
                 <iframe
@@ -273,7 +283,7 @@
         </article>
 
         <!-- FUNK VS FRIGHT -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
             <div class="project-video">
                 <iframe
                     src="https://www.youtube.com/embed/iyeOv2VAYFw?si=_Wi_lciT4wfnwtnP"
@@ -315,8 +325,44 @@
 
         </article>
 
+        <!-- CALENDAR MEET -->
+        <article class="project-card" data-category="software">
+            <div class="project-image">
+                <img src="project_details/calendar_meet.png">
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>CALENDAR MEET</h4>
+
+                    <p class="project-role">
+                        Backend Developer • DevOps
+                    </p>
+
+                    <p class="project-description">
+                        A full-stack scheduling application for creating and managing events through an interactive calendar interface, featuring persistent data storage and backend-driven event management.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>PostgreSQL</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Pending-Status/CalendarMeet" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="project_details/calendar_meet.html">Details</a>
+                </div>
+            </div>
+        </article>
+
         <!-- BOOPING BEEP -->
-        <article class="project-card">
+        <article class="project-card" data-category="game">
             <div class="project-video">
                 <iframe
                     src="https://www.youtube.com/embed/2KB99jYnFAg?si=-OYa3HtZDbLJdx1A"
@@ -352,6 +398,117 @@
                 </div>
             </div>
         </article>
+
+        <!-- FACEBOOK SOCIAL NETWORK ANALYSIS -->
+        <article class="project-card" data-category="software">
+            <div class="project-image">
+                <img src="project_details/facebook.png">
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>FACEBOOK SOCIAL NETWORK ANALYSIS</h4>
+
+                    <p class="project-role">
+                        Python Developer • Data Analysis
+                    </p>
+
+                    <p class="project-description">
+                        An interactive dashboard for exploring large-scale Facebook page networks using graph analytics and network visualization. Built with Python, Streamlit, and NetworkX to analyze relationship structures across eight page categories.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>NetworkX</span>
+                        <span>Graph Analysis</span>
+                        <span>Data Visualization</span>
+                        <span>Research</span>
+                        
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/doom-boy/Facebook-Social-Network-Analysis" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="project_details/facebook.html">Details</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- THE AVENTURE OF MAMMY -->
+        <article class="project-card" data-category="game">
+            <div class="project-video">
+                <div class="project-image">
+                    <img src="project_details/theAdventureOfMammyDemo.gif">
+                </div>
+
+                <div class="project-engine">UNITY</div>
+                <div class="project-prototype">PROTOTYPE</div>
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>THE ADVENTURE OF MAMMY</h4>
+
+                    <p class="project-role">
+                        Independently Developed
+                    </p>
+
+                    <p class="project-description">
+                        A combat systems prototype exploring Soulslike-inspired movement, including rolling, stamina management, and attack responsiveness for a 2D action framework.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Soulslike</span>
+                        <span>Combat Systems</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/ectran/TheAdventureOfMammy" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- MAMMY.EXE -->
+        <article class="project-card" data-category="game">
+            <div class="project-video">
+                <iframe
+                    src="https://www.youtube.com/embed/jI7EbadT0v0?si=yAps2FHIJZiU4kJS"
+                    title="MAMMY.EXE"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="project-engine">UNITY</div>
+                <div class="project-prototype">EXPERIMENTAL</div>
+            </div>
+
+            <div class="project-content">
+
+                <div>
+                    <h4>MAMMY.EXE</h4>
+
+                    <p class="project-role">
+                        Independently Developed
+                    </p>
+
+                    <p class="project-description">
+                        An experimental prototype exploring timing-based interaction and narrative delivery through a terminal-style interface, focusing on input-driven tension.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Timing Based</span>
+                        <span>Narrative</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </article>
+
     </div>
 </section>
 
@@ -366,7 +523,7 @@
     <h3>ART</h3>
     <h6>// pixel art, digital portraits, game assets and more</h6>
     <p class="section-counter">
-        [ 39 ARTWORKS ARCHIVED ]
+        [ 39 ARTWORKS TOTAL ]
     </p>
 
     <div class="art-filters">
@@ -464,17 +621,17 @@
         Made in MediBang Paint.">
             <img src="art/art09.png" alt="Artwork">
             <div class="art-overlay">
-                <h4>Unnamed OC III</h4>
+                <h4>Rhea</h4>
                 <p>Original Character • Digital Art</p>
             </div>
         </div>
 
-        <div class="art-item" data-category="portrait" data-desc="Character concept inspired by a Minecraft skin, reimagined through my own illustration style. A companion piece to Unnamed OC III exploring a connected design direction. 
+        <div class="art-item" data-category="portrait" data-desc="Character concept inspired by a Minecraft skin, reimagined through my own illustration style. A companion piece to Rhea exploring a connected design direction. 
         
         Made in MediBang Paint.">
             <img src="art/art10.png" alt="Artwork">
             <div class="art-overlay">
-                <h4>Unnamed OC IV</h4>
+                <h4>Der</h4>
                 <p>Original Character • Digital Art</p>
             </div>
         </div>
@@ -484,7 +641,7 @@
         Made in MediBang Paint.">
             <img src="art/art11.png" alt="Artwork">
             <div class="art-overlay">
-                <h4>Unnamed OC V</h4>
+                <h4>Unnamed OC III</h4>
                 <p>Original Character • Digital Art</p>
             </div>
         </div>
@@ -494,7 +651,7 @@
         Made in MediBang Paint.">
             <img src="art/art12.png" alt="Artwork">
             <div class="art-overlay">
-                <h4>Unnamed OC VI</h4>
+                <h4>Unnamed OC IV</h4>
                 <p>Original Character • Digital Art</p>
             </div>
         </div>
@@ -810,6 +967,44 @@
         <button class="lightbox-close" id="lightbox-close">✕</button>
     </div>
 </div>
+
+<script>
+const projectButtons = document.querySelectorAll(".project-filters button");
+const projectCards = Array.from(document.querySelectorAll(".project-card"));
+
+function updateProjects(filter = "all") {
+
+    let visibleCount = 0;
+
+    projectCards.forEach(card => {
+
+        const categories = card.dataset.category.split(" ");
+
+        const matches =
+            filter === "all" ||
+            categories.includes(filter);
+
+        if (matches && visibleCount < 4) {
+            card.style.display = "flex";   // project cards use flex
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+
+projectButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        projectButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        updateProjects(btn.dataset.filter);
+    });
+});
+
+updateProjects("all");
+</script>
 
 <script>
 const filterButtons = document.querySelectorAll(".art-filters button");

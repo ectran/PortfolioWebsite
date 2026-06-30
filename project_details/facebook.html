@@ -30,19 +30,19 @@
     <div class="project-header">
 
         <div>
-            <h1>CALENDAR MEET</h1>
+            <h1>FACEBOOK SOCIAL NETWORK ANALYSIS</h1>
 
             <p class="project-role">
-                Backend Developer • DevOps
+                Python Developer • Data Analysis
             </p>
 
             <div class="project-tags">
-                <span>JavaScript</span>
-                <span>Node.js</span>
-                <span>React</span>
-                <span>PostgreSQL</span>
-                <span>AWS</span>
-                <span>CI/CD</span>
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>NetworkX</span>
+                <span>Graph Analysis</span>
+                <span>Data Visualization</span>
+                <span>Research</span>
             </div>
         </div>
 
@@ -53,7 +53,8 @@
 
 <!-- VIDEO -->
 <div class="project-image">
-    <img src="calendar_meet.png" alt="CALENDAR MEET">
+    <img src="facebook.png" alt="CALENDAR MEET">
+
 </div>
 
 
@@ -63,7 +64,7 @@
     <h2>OVERVIEW</h2>
 
     <p>
-        CalendarMeet is a full-stack scheduling application designed to help users organize and manage events through an interactive calendar interface. The system integrates a React frontend with a Node.js backend and PostgreSQL database, with cloud infrastructure and CI/CD pipelines supporting deployment and persistent data storage.
+        Facebook Social Network Analysis is an interactive dashboard for exploring large-scale Facebook page networks through graph analytics and visualization. Using datasets from the Stanford Network Analysis Project (SNAP), the project examines relationship structures across eight categories of Facebook pages and provides interactive tools for comparing network characteristics, centrality metrics, and connectivity patterns.
     </p>
 
 </section>
@@ -72,7 +73,7 @@
     <h2>PROJECT INTENT</h2>
 
     <p>
-        The project was built to explore how modern web applications coordinate frontend interaction, backend APIs, and cloud infrastructure into a single cohesive system. The focus was on building a reliable event management workflow that supports real-time user interaction while maintaining data consistency across services.
+        The goal of the project was to investigate how graph analytics can reveal structural differences between online communities. Rather than focusing solely on statistical output, we wanted to create an interactive dashboard that allowed users to explore network properties visually while supporting research questions through interpretable metrics and visualizations.
     </p>
 </section>
 
@@ -85,22 +86,22 @@
 
         <div class="feature-card">
             <h3>ROLE</h3>
-            <p>Backend Developer</p>
+            <p>Data Analysis</p>
         </div>
 
         <div class="feature-card">
             <h3>TEAM SIZE</h3>
-            <p>4 Developers</p>
+            <p>3 Developers</p>
         </div>
 
         <div class="feature-card">
             <h3>DURATION</h3>
-            <p>4 Months</p>
+            <p>2 Months</p>
         </div>
 
         <div class="feature-card">
             <h3>STACK</h3>
-            <p>React • Node.js • PostgreSQL • AWS • CI/CD</p>
+            <p>Python • Streamlit • NetworkX • Pandas • Plotly</p>
         </div>
 
     </div>
@@ -114,12 +115,12 @@
     <h2>KEY FEATURES</h2>
 
     <ul>
-        <li>Interactive calendar scheduling interface using FullCalendar.js</li>
-        <li>Create, edit, and delete event management system</li>
-        <li>Persistent event storage using PostgreSQL database</li>
-        <li>RESTful API architecture for frontend/backend communication</li>
-        <li>Cloud deployment with AWS infrastructure</li>
-        <li>Automated CI/CD pipeline using GitHub Actions</li>
+        <li>Interactive Streamlit dashboard for exploring Facebook page networks</li>
+        <li>Network visualization across eight Facebook page categories</li>
+        <li>Centrality analysis for identifying influential nodes</li>
+        <li>Comparative exploration of different community structures</li>
+        <li>Interactive charts and graph statistics</li>
+        <li>Large-scale dataset processing using NetworkX</li>
     </ul>
 
 </section>
@@ -131,11 +132,11 @@
     <h2>MY CONTRIBUTIONS</h2>
 
     <ul>
-        <li>Configured AWS infrastructure for backend hosting and deployment</li>
-        <li>Implemented CI/CD pipeline using GitHub Actions for automated builds and releases</li>
-        <li>Assisted in backend server configuration and deployment workflow design</li>
-        <li>Integrated cloud storage services for application asset handling</li>
-        <li>Supported system debugging and deployment optimization</li>
+        <li>Conducted graph analysis and interpreted network metrics to answer project research questions</li>
+        <li>Developed portions of the Python analysis used to compare political and entertainment page networks</li>
+        <li>Assisted with early dashboard prototyping and data visualization during project development</li>
+        <li>Wrote research findings and translated technical analysis into accessible explanations</li>
+        <li>Collaborated on testing, refinement, and presentation of the final dashboard</li>
     </ul>
 
 </section>
@@ -148,25 +149,42 @@
     <div class="feature-grid">
 
         <div class="feature-card">
-            <h3>Deployment Automation</h3>
+            <h3>Working with Large Networks</h3>
             <p>
-                Designed CI/CD workflows to reduce manual deployment steps and ensure consistent builds across environments.
+                Processing datasets containing tens of thousands to hundreds of thousands of relationships required efficient graph processing while keeping dashboard interactions responsive.
             </p>
         </div>
 
         <div class="feature-card">
-            <h3>Backend Integration</h3>
+            <h3>Presenting Complex Metrics</h3>
             <p>
-                Coordinated API structure between frontend and backend to ensure stable event data flow.
+                A major challenge was translating graph theory concepts such as centrality into visualizations that were understandable to users without a networking background.
             </p>
         </div>
 
         <div class="feature-card">
-            <h3>Data Persistence</h3>
+            <h3>Collaborative Development</h3>
             <p>
-                Structured PostgreSQL schema to support reliable event creation, updates, and retrieval.
+                The project required coordinating research, implementation, and visualization work across multiple contributors while maintaining consistent analysis throughout the dashboard.
             </p>
         </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="project-section">
+
+    <h2>GALLERY</h2>
+
+    <div class="project-gallery">
+
+        <img src="facebook/facebook1.png">
+        <img src="facebook/facebook2.png">
+        <img src="facebook/facebook3.png">
+        <img src="facebook/facebook4.png">
+        <img src="facebook/facebook5.png">
 
     </div>
 
@@ -178,7 +196,7 @@
     <h2>SYSTEM ARCHITECTURE</h2>
 
     <p>
-        The system follows a standard full-stack architecture: React frontend communicates with a Node.js + Express backend API, which interfaces with a PostgreSQL database for persistent event storage. AWS handles deployment and hosting, while GitHub Actions manages CI/CD automation.
+        The application was built using Streamlit as the interactive frontend with Python handling data processing and graph analysis through NetworkX. Large Facebook network datasets were loaded into memory, analyzed using graph algorithms, and presented through interactive visualizations and statistical summaries to support exploratory analysis.
     </p>
 
 </section>
@@ -189,7 +207,7 @@
     <h2>WHAT I LEARNED</h2>
 
     <p>
-        This project strengthened my understanding of full-stack system design, especially the relationship between frontend interfaces, backend APIs, and cloud deployment pipelines. It also provided hands-on experience with CI/CD automation and production-style infrastructure workflows.
+        This project introduced me to graph analytics and the challenges of interpreting large-scale network data. Beyond implementing analysis tools, I learned how important it is to communicate technical findings clearly through visualization and written interpretation. It also reinforced how software can bridge research and user interaction by making complex datasets easier to explore and understand.
     </p>
 
 </section>
@@ -202,22 +220,17 @@
 
     <p>
         <strong>Emily Tran</strong><br>
-        Backend Developer • DevOps
+        Data Analysis • Python Development • Research & Documentation
     </p>
 
     <p>
-        <strong>Bryan Sanchez</strong><br>
-        Frontend Developer • UI/UX Design
+        <strong>Elijah Chan</strong><br>
+        Project Setup • Python Development • Dashboard Infrastructure
     </p>
 
     <p>
-        <strong>Erik Ignacio</strong><br>
-        Backend API Development
-    </p>
-
-    <p>
-        <strong>Abhishek Sarepaka</strong><br>
-        Full-Stack Development
+        <strong>Keon Der</strong><br>
+        Python Development • Graph Analytics • Dashboard Implementation
     </p>
 
 </section>
